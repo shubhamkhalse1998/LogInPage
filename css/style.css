@@ -1,0 +1,216 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    /* background: linear-gradient(45deg, #131086, #b621f3); */
+    background: linear-gradient(48deg, red,yellow);
+    padding: 40px;
+  }
+  
+  .container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    /* grid-template-columns: 50% 50%; */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 150px;
+    background-color: white;
+  }
+  
+  .box-right {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+  }
+  .box-right img {
+    width: 70%;
+  }
+  
+   .header {
+    margin-bottom: 30px;
+  }
+  .header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-left: -70px;
+  }
+  .header p {
+    opacity: 0.7;
+    margin-left: -70px;
+  }
+  
+  .login-form {
+    width: 450px;
+    
+  }
+  .login-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .login-form-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: -70px;
+    margin-top: 30px;
+  }
+  .login-form-footer a {
+    flex: 6;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-radius: 100px;
+    padding: 0.6rem;
+    justify-content: center;
+    border: 1px solid black;
+    display: flex;
+    width: 450px;
+    border-color: orangered;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+  }
+  .login-form-footer a:hover {
+    background-color: #eeeeee;
+  }
+  
+  .form-item label:not(.checkboxLabel) {
+    display: inline-block;
+    background-color: white;
+    margin-bottom: 10px;
+    position: absolute;
+    padding: 0 10px;
+    transform: translate(-20px, -8px);
+    font-size: 15px;
+  }
+  
+  input[type=text],
+  input[type=password],
+  input[type=email] {
+    border: 1px solid black;
+    outline: none;
+    height: 55px;
+    padding: 0 2rem;
+    border-radius: 100px;
+    border-color: orangered;
+    margin-left: -70px;
+    width: 100%;
+    transition: background 0.5s;
+    font-size: 18px;
+  }
+  .checkbox {
+    display: flex;
+    margin-left: -70px;
+    align-items: center;
+  }
+  
+  input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    accent-color: #131086;
+  }
+  
+  button {
+    border: none;
+    background: linear-gradient(45deg,red, yellow);
+    color: white;
+    padding: 1rem;
+    margin-left: -70px;
+    border-radius: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    height: 55px;
+    width: 450px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1350px) {
+    .box-left {
+      padding: 150px;
+    }
+    .login-form {
+      width: 100%;
+    }
+    .login-form-footer {
+      flex-direction: column;
+      gap: 15px;
+    }
+    button{
+        text-align: center;
+         }
+  input[type=text],
+  input[type=password],
+  input[type=email] {
+    border: 1px solid black;
+    outline: none;
+    height: 55px;
+    padding: 0 2rem;
+    border-radius: 100px;
+    border-color: orangered;
+    margin-left: -70px;
+    width: 118%;
+    transition: background 0.5s;
+    font-size: 18px;
+  }
+  }
+  @media (max-width: 768px) {
+    body {
+      padding: 20px;
+      background: linear-gradient(45deg,black,yellow);
+    }
+    .header{
+        margin-top: -100px;
+        margin-left: 10px;
+    }
+    button{
+        background: linear-gradient(45deg,black,yellow);
+    }
+    .container {
+      grid-template-columns: auto;
+    }
+    input[type=text],
+  input[type=password],
+  input[type=email] {
+    border: 1px solid black;
+    outline: none;
+    height: 55px;
+    padding: 0 2rem;
+    border-radius: 100px;
+    border-color: yellowgreen;
+    margin-left: -70px;
+    width: 118%;
+    transition: background 0.5s;
+    font-size: 18px;
+  }
+  button{
+    /* margin-left: -10px; */
+    width: 550px;
+  }
+  .login-form-footer a{
+    border-color: yellowgreen;
+    width: 550px;
+  }
+    .box-left{
+        margin-left: 26px;
+        border-radius: 15px;
+    }
+    .box-right {
+      display: none;
+    }
+    .checkbox{
+        margin-left: -70px;
+    }
+  }  
